@@ -1,6 +1,6 @@
 # Ticket Show Booking (Modern Application Development - I)
 
-### Replit Project Link :- https://replit.com/@SinhaSudeep18/TicketShowBooking-ModernApplicationDevelopment-I
+### Replit Project Link : https://replit.com/@SinhaSudeep18/TicketShowBooking-ModernApplicationDevelopment-I
 
 ## Tree Schema For Understanding The Backend of the Application is given below:
 ## The Head Part Of the Map, Which shows the Home Page, has 4 tabs, which are 'User Login', 'User Signin', 'Admin', and Search. They are divided into [USER, ADMIN, SEARCH].

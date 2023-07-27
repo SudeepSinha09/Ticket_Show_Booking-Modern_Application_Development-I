@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Options</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container for the buttons */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Button styles */
+        .button-container a {
+            display: inline-block;
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container a:last-child {
+            margin-bottom: 0;
+        }
+
+        .button-container a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="/search/show/name">Search by Show Name</a>
+        <a href="/search/show/tags">Search by Show Tags</a>
+        <a href="/search/show/rating">Search by Show Rating</a>
+    </div>
+</body>
+</html>

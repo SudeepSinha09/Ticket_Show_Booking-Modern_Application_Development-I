@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Show</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            padding: 8px 16px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #222;
+        }
+    </style>
+</head>
+<body>
+    <h1>Edit Show</h1>
+    <form action="/admin/show/edit/{{showid}}" method="POST" id="create-form">
+        <div>
+            <label>Show name:</label>
+            <input type="text" name="show" required />
+        </div><br>
+        <div>
+            <label>Rating:</label>
+            <input type="text" name="rating" required />
+        </div><br>
+        <div>
+            <label>Timing:</label>
+            <input type="text" name="timing" required />
+        </div><br>
+        <div>
+            <label>Tags:</label>
+            <input type="text" name="tags" required />
+        </div><br>
+        <div>
+            <label>Price:</label>
+            <input type="text" name="price" required />
+        </div><br>
+        <div>
+            <input type="submit" value="Submit">
+        </div><br>
+    </form>  
+</body>
+</html>

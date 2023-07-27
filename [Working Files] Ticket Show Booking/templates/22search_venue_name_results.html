@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+        }
+
+        div {
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #fff;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        br {
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+    {% for vnu in vnus %}
+        {% if vnu.name == name %}
+            <div>
+                <h2>{{ vnu.name }}</h2>
+                <br>
+                <strong>Place:</strong> {{ vnu.place }}<br>
+                <strong>Location:</strong> {{ vnu.location }}<br>
+                <strong>Capacity:</strong> {{ vnu.capacity }}<br>
+                <strong>Shows:</strong>
+                <br>
+                {% for sho in vnu.shows %}
+                    {{ sho.name }} |
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endfor %}    
+</body>
+</html>

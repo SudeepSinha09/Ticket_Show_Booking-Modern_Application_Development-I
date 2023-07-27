@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        form {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        div {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 250px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .input-wrapper {
+            text-align: center;
+        }
+
+        input[type="submit"],
+        a {
+            width: 150px;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.2s ease;
+            display: block;
+            margin: 5px auto;
+        }
+
+        input[type="submit"]:hover,
+        a:hover {
+            background-color: #222;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello User</h1>
+    <form action="/user" method="POST" id="create-form">
+        <div>
+            <label>Email:</label>
+            <input type="text" name="email" required />
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="text" name="password" required />
+        </div>
+        <div class="input-wrapper">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    <div class="input-wrapper">
+        <a href="/">Go back</a>
+    </div>
+</body>
+</html>

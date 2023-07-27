@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        form {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        div {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .button-wrapper {
+            text-align: center; /* Center the content inside the wrapper */
+        }
+
+        input[type="submit"],
+        a {
+            width: 150px; /* Set the width of the links and submit button */
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.2s ease;
+            display: block; /* Display them as block elements (one below the other) */
+            margin: 5px auto; /* Center horizontally within the wrapper */
+        }
+
+        input[type="submit"]:hover,
+        a:hover {
+            background-color: #222;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello User</h1>
+    <form action="/user/new" method="POST" id="create-form">
+        <div>
+            <label>Email:</label>
+            <input type="text" name="email" required />
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="text" name="password" required />
+        </div>
+        <div class="button-wrapper">
+            <input type="submit" value="Submit">
+            <a href="/">Go back</a>
+        </div>
+    </form>
+</body>
+</html>

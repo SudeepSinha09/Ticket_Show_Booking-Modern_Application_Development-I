@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+
+        /* Center the buttons horizontally and vertically */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container for the buttons */
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Button styles */
+        .button-container a {
+            display: inline-block;
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .button-container a:last-child {
+            margin-right: 0; /* Remove right margin from the last button */
+        }
+
+        .button-container a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="/admin/show/edit/{{showid}}">Edit</a>
+        <a href="/admin/show/delete/{{showid}}">Delete</a>
+    </div>
+</body>
+</html>

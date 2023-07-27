@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container for the show and venue information */
+        .result-container {
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #fff;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+        }
+
+        br {
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+    {% for sho in shos %}
+        {% for vnu in vnus %}
+            {% if sho.tags == tags %}
+                {% if vnu.id == sho.venue_id %}
+                    <div class="result-container">
+                        <h2>{{ sho.name }}</h2>
+                        <br>
+                        <strong>Rating:</strong> {{ sho.rating }}<br>
+                        <strong>Timing:</strong> {{ sho.timing }}<br>
+                        <strong>Tags:</strong> {{ sho.tags }}<br>
+                        <strong>Ticket Price:</strong> {{ sho.ticket_price }}<br>
+                        <strong>Venue Name:</strong> {{ vnu.name }}<br>
+                    </div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}    
+    {% endfor %}    
+</body>
+</html>

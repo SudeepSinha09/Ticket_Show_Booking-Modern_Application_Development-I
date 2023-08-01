@@ -22,10 +22,12 @@
 
 ## LINK TO ACCESS THE COMPLETE TREE :- https://cloud.smartdraw.com/?nsu=1 (sudeep.sinha.ss95@gmail.com)
 
-The Ticket Show Booking project is a web application developed for IIT Madras - Modern Application Development - I course. The project allows users to book tickets online for various shows at different venues. The application is built using Flask, Jinja2 templates, and Bootstrap for HTML generation and styling. SQLite is used for data storage, and REST API is used for communication between the frontend and backend.
+The Ticket Show Booking project is a sophisticated web application developed as part of the IIT Madras - Modern Application Development - I course. Its primary objective is to enable users to conveniently book tickets online for a wide array of shows held at various venues. The application is skillfully crafted using Flask, a robust web framework, and employs Jinja2 templates for efficient HTML generation, while CSS is employed for stylish and appealing user interfaces. For seamless data storage, the project utilizes SQLite in conjunction with SQLAlchemy, a versatile and efficient ORM (Object-Relational Mapping) tool, ensuring seamless communication between the frontend and backend components.
 
-The project also includes features such as dynamic pricing, where show prices can go up or down based on popularity. All demos can be run on a standalone platform like replit.com, and no additional server setup is required for database and frontend management.
+One of the remarkable aspects of the Ticket Show Booking project is its ease of deployment and accessibility. All the demos can be effortlessly run on a standalone platform like replit.com, eliminating the need for any additional server setup for database and frontend management. This ensures a hassle-free experience for both developers and end-users.
 
-The terminology used in the project includes Ticket Booking Platform, Venue (list of shows, capacity, etc.), Show (name, rating, price, etc.), and Dynamic Pricing (optional).
+The relational database management system (RDBMS) employed in the project consists of well-designed tables to efficiently store and manage data. Key tables include Ticket Booking Platform, Venue (containing details about shows, capacities, etc.), Show (featuring show names, ratings, prices, etc.), and Dynamic Pricing (an optional component that enhances pricing flexibility).
 
-The Ticket Show Booking project competes with similar products in the market such as BookMyShow and TicketNew, which are available on web, IOS, and Android platforms.
+As a formidable competitor to well-established products like BookMyShow and TicketNew, the Ticket Show Booking project strives to deliver a top-notch and comprehensive ticket booking solution. Its user-friendly interface, extensive feature set, and efficient technology stack contribute to its potential success in the competitive market.
+
+Overall, the Ticket Show Booking project is a testament to the prowess and dedication of its developers, providing an exemplary demonstration of modern application development techniques and practices.
